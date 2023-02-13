@@ -3,6 +3,12 @@ body{
     height: 100vh;
     margin: 0;
     background-color: rgba(249, 117, 69, 0.634);
-    color: #000;
+    color: whitesmoke;
     font-style: italic;
+}
+label{
+    display: inline-block;
+    background-color: rgba(243, 64, 64, 0.7);
+    height: 50px;
+    width: 100vh;
 }
