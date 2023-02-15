@@ -14,10 +14,11 @@
     <form action="#">
     <!--Fieldset1 Firs Name, Last Name,Email, Password Fields-->
         <fieldset>
-            <label for="First Name">Enter your First Name:<input type="required"></label>
-            <label for="Last Name">Enter your Last Name:<input type="required"></label>
-            <label for="Email">Enter your Email:<input type="required"></label>
-            <label for="Password">Enter your Password:<input type="required"></label>
+            <label for="First Name">Enter your First Name:<input type="text"required></label>
+            <label for="Last Name">Enter your Last Name:<input type="text"required></label>
+            <label for="Email">Enter your Email:<input type="email" required></label>
+            <!-- <label for="Password">Enter your Password:<input type="password" minlength="8" pattern="a-z0-5{8,}"></label> -->
+            <label for="Password">Enter your Password:<input type="password" pattern="[a-z0-5]{8}"required></label>
         </fieldset>
 
     <!--Fieldset2-->
