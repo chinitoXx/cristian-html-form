@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CCC-HTML-FORM</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!--*****************************Title of the form***********************-->
     <h1>Registration Form</h1>
     <!--******************Form*******************-->
     <form action="#">
-    <!--Fieldset1 Firs Name, Last Name,Email, Password Fields-->
-        <fieldset>
-            <label for="First Name">Enter your First Name:<input type="text"required></label>
-            <label for="Last Name">Enter your Last Name:<input type="text"required></label>
-            <label for="Email">Enter your Email:<input type="email" required></label>
-            <!-- <label for="Password">Enter your Password:<input type="password" minlength="8" pattern="a-z0-5{8,}"></label> -->
-            <label for="Password">Enter your Password:<input type="password" pattern="[a-z0-5]{8}"required></label>
-        </fieldset>
+      <!--Fieldset1 Firs Name, Last Name,Email, Password Fields-->
+      <fieldset>
+        <label for="First Name">Enter your First Name:<input type="text" name="First Name" required/></label>
+        <label for="Last Name">Enter your Last Name:<input type="text" name="Last Name" required/></label>
+        <label for="Email">Enter your Email:<input type="email" name="email" required/></label>
+        <!-- <label for="Password">Enter your Password:<input type="password" minlength="8" pattern="a-z0-5{8,}"></label> -->
+        <label for="Password">Enter your Password:<input type="password"pattern="[a-z0-5]{8}"required/></label>
+      </fieldset>
+        <hr>
+      <!--Fieldset2-->
+      <fieldset>
+        <label for="#"><input type="radio" name="account-type" id="" />Personal Account</label>
+        <label for="#"><input type="radio" name="account-type" id="" />Business Account</label>
+        <label for="#"><input type="checkbox" required />I accept the<a href="#">Terms and Conditions</a></label>
+      </fieldset>
+        <hr>
+      <!--Fieldset3-->
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" /></label>
+        <label for="#"
+          >Input you age(years): <input type="number" min="13" max="120"></label>
+        <label>
+            How did you hear from us?
+          <select>
+            <option value="">(Select one)</option>
+            <option value="">News</option>
+            <option value="">Blog</option>
+            <option value="">Forums</option>
+            <option value="">Others</option> 
 
-    <!--Fieldset2-->
-        <fieldset>
-            <label for="#"><input type="radio" name="account-type" id="">Personal Account</label>
-            <label for="#"><input type="radio" name="account-type" id="">Business Account</label>
-            <label for="#"><input type="checkbox" required>I accept the <a href="#">Terms and Conditions</a></label>
-        </fieldset>
+          </select>
+        </label>
+        <label for="#">
+            Provide a bio:
+            <textarea rows="3" >
 
-    <!--Fieldset3-->
-        <fieldset>
-            
-         </fieldset>
-
+            </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
-
-</body>
+  </body>
 </html>
