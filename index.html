@@ -10,48 +10,51 @@
   <body>
     <!--*****************************Title of the form***********************-->
     <h1>Registration Form</h1>
+    <p>Please fill out this information with the required information</p>
     <!--******************Form*******************-->
     <form action="#">
-      <!--Fieldset1 Firs Name, Last Name,Email, Password Fields-->
+
+      <!--Fieldset 1 Firs Name, Last Name,Email, Password Fields-->
       <fieldset>
-        <label for="First Name">Enter your First Name:<input type="text" name="First Name" required/></label>
-        <label for="Last Name">Enter your Last Name:<input type="text" name="Last Name" required/></label>
-        <label for="Email">Enter your Email:<input type="email" name="email" required/></label>
-        <!-- <label for="Password">Enter your Password:<input type="password" minlength="8" pattern="a-z0-5{8,}"></label> -->
-        <label for="Password">Enter your Password:<input type="password"pattern="[a-z0-5]{8}"required/></label>
+        <label for="#">Enter your First Name:<input type="text" name="First Name" required placeholder="Enter your First Name"> </label>
+        <label for="#">Enter your Last Name:<input type="text" name="Last Name" required placeholder="Enter your Last Name"> </label>
+        <label for="#">Enter your Email:<input type="email" name="Email" required placeholder="Enter your Email"> </label>
+        <!-- <label for="Password">Enter your Password:<input type="password" minlength="8" pattern="a-z0-5{8}"></label> -->
+        <label for="#">Enter your Password:<input type="password" pattern="[a-z0-5]{8}" name="password" required placeholder="Enter a-z 0-5 with min of 8 characters"> </label>
       </fieldset>
         <hr>
-      <!--Fieldset2-->
+
+      <!--Fieldset 2-->
       <fieldset>
-        <label for="#"><input type="radio" name="account-type" id="" />Personal Account</label>
-        <label for="#"><input type="radio" name="account-type" id="" />Business Account</label>
-        <label for="#"><input type="checkbox" required />I accept the<a href="#">Terms and Conditions</a></label>
+        <label for="#"><input class="inline" type="radio" name="account-type" id="">Personal Account</label>
+        <label for="#"><input class="inline" type="radio" name="account-type" id="">Business Account</label>
+        <label for="#"><input class="inline" type="checkbox" required>I accept the<a href="termsConditions.html" target="_blank">Terms and Conditions</a></label>
       </fieldset>
-        <hr>
-      <!--Fieldset3-->
+      <!--Fieldset 3-->
       <fieldset>
-        <label>Upload a profile picture: <input type="file" /></label>
-        <label for="#"
-          >Input you age(years): <input type="number" min="13" max="120"></label>
+        <label>Upload a profile picture: <input type="file" name="fileUpload"></label>
+        <label for="#">Input your age(years):<input type="number" name="age" min="13" max="120"></label>
         <label>
             How did you hear from us?
-          <select>
+          <select name="referrer">
             <option value="">(Select one)</option>
-            <option value="">News</option>
-            <option value="">Blog</option>
-            <option value="">Forums</option>
-            <option value="">Others</option> 
+            <option value="1" name="news">News</option>
+            <option value="2" name="blog">Blog</option>
+            <option value="3" name="forums">Forums</option>
+            <option value="4" name="others">Others</option> 
 
           </select>
         </label>
         <label for="#">
             Provide a bio:
-            <textarea rows="3" >
-
-            </textarea>
+            <textarea rows="3" cols="30" name="bio" placeholder="I like coding on a rainy day. . . ."></textarea>
         </label>
+
+
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit">
+
     </form>
+    
   </body>
 </html>
